@@ -172,7 +172,7 @@ class AuthController extends Controller
         $resource = $this->getResource($request->get('resource'), $request->get('id'));
 
         if (!$resource) {
-            return response()->json(['error' => 'You are not authorized'], 401);
+            return response()->json(['error' => 'Unauthorized'], 401);
         }
 
         return response()->json($resource, 200);
