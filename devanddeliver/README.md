@@ -146,7 +146,8 @@
  
 * **Error Response:**
 
-  None
+  * **Code:** 401 Unauthorized <br />
+    **Content:** `{"error":"Unauthorized"}`
 
 * **Sample Call:**
 
